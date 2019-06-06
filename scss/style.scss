@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
+
+body {
+    margin: 0;
+    padding: 0;
+
+    .container {
+        width: 100%;
+        position: relative;
+        background-image: linear-gradient(rgba(0, 0, 0, .85) 15%, rgba(0, 0, 0, .2) 40%, #000 90%);
+
+
+
+        .containerInner {
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50px;
+
+
+
+            .titleBar {
+                display: flex;
+                padding-left: 16px;
+
+                // opacity: 0.6;
+
+                *,
+                :before,
+                :after {
+                    box-sizing: border-box;
+                }
+
+                #container {
+                    justify-content: center;
+                    width: 100%;
+                    display: flex;
+                }
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                h1 {
+                    animation: text-shadow 1.5s ease-in-out infinite;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    color: white;
+                    line-height: 60px;
+                }
+
+                h1:hover {
+                    animation-play-state: paused;
+                }
+
+                @keyframes text-shadow {
+                    0% {
+                        transform: translateY(0);
+                        text-shadow:
+                            0 0 0 #0c2ffb,
+                            0 0 0 #2cfcfd,
+                            0 0 0 #fb203b,
+                            0 0 0 #fefc4b;
+                    }
+
+                    20% {
+                        transform: translateY(-1em);
+                        text-shadow:
+                            0 0.125em 0 #0c2ffb,
+                            0 0.25em 0 #2cfcfd,
+                            0 -0.125em 0 #fb203b,
+                            0 -0.25em 0 #fefc4b;
+                    }
+
+                    40% {
+                        transform: translateY(0.5em);
+                        text-shadow:
+                            0 -0.0625em 0 #0c2ffb,
+                            0 -0.125em 0 #2cfcfd,
+                            0 0.0625em 0 #fb203b,
+                            0 0.125em 0 #fefc4b;
+                    }
+
+                    60% {
+                        transform: translateY(-0.25em);
+                        text-shadow:
+                            0 0.03125em 0 #0c2ffb,
+                            0 0.0625em 0 #2cfcfd,
+                            0 -0.03125em 0 #fb203b,
+                            0 -0.0625em 0 #fefc4b;
+                    }
+
+                    80% {
+                        transform: translateY(0);
+                        text-shadow:
+                            0 0 0 #0c2ffb,
+                            0 0 0 #2cfcfd,
+                            0 0 0 #fb203b,
+                            0 0 0 #fefc4b;
+                    }
+                }
+
+                @media (prefers-reduced-motion: reduce) {
+                    * {
+                        animation: none !important;
+                        transition: none !important;
+                    }
+                }
+
+
+                input {
+                    font-size: 20px;
+                    margin-right: 20px;
+                    border-bottom: 2px solid black;
+                    // opacity: 1;
+                    color: white;
+                    background-color: transparent;
+                    border: none;
+                    font-family: Georgia, 'Times New Roman', Times, serif
+                }
+            }
+
+            .movieDescriptionBox {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                color: #00FC87;
+
+
+                .movieInfo {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    padding-top: 30px;
+                    background-color: black;
+                    opacity: 0.6;
+                    align-items: center;
+                    font-family: fantasy;
+
+
+                    .colorizing {
+                        color: white;
+                    }
+
+                    .movie-title {
+                        display: block;
+                    }
+
+                    .movie-overview {
+                        display: block;
+                        text-align: justify;
+                        font-size: 18px;
+
+                    }
+
+                    .small-info {
+                        font-size: 20px;
+                    }
+
+
+                }
+            }
+
+            .footer {
+                height: 100px;
+                text-align: center;
+                color: beige;
+
+
+                h5 {
+                    line-height: 50px;
+                    font-family: fantasy;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+        }
+
+
+    }
+}
